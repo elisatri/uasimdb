@@ -1,9 +1,11 @@
 import streamlit as st
 import pandas as pd
 
+# Path to the CSV file
+csv_file_path = 'IMBD.csv'
+
 # Load the CSV data
-data_url = 'path/to/IMBD.csv'
-df = pd.read_csv(data_url)
+df = pd.read_csv(csv_file_path)
 
 # Title of the Streamlit app
 st.title('IMDb Movie Details')
