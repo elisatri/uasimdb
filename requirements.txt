@@ -3,3 +3,9 @@ numpy
 pandas
 pydeck
 streamlit
+matplotlib
+sqlalchemy
+pymysql
+mysql-connector-python
+seaborn
+plotly
