@@ -26,6 +26,10 @@ selection = st.sidebar.radio("Pilih Halaman", ["Detail Film IMDb", "Visualisasi 
 # IMDb Movie Details section
 if selection == "Detail Film IMDb":
     st.header("🎥 Detail Film IMDb")
+
+    # Search bar for movie titles
+    search_query = st.text_input("Cari judul film")
+    filtered_df = df[df['title'].str.contains(search_query, case=False, na=False)]
     
     # Display the movie titles in a dropdown menu
     movie_title = st.selectbox('Pilih judul film', df['title'])
